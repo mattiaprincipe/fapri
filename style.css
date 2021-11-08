@@ -1,0 +1,122 @@
+@font-face {
+    font-family: 'FaPriFont';
+    src:  url('fapri.woff') format('woff');
+  }
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: #dadada;
+    font-family: 'FaPriFont', sans-serif;
+}
+.alphaBg{
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0);
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+}
+.alphaBgOpen{
+    z-index: 998;
+    background-color: rgba(0, 0, 0, 0.4);
+    transition: all 0.5s;
+}
+.menu {
+    background-color: #fff;
+    height: 60px;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    z-index: 999;
+}
+.menuchiuso {
+    background-color: #fff;
+    height: 60px;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    transition-property: height;
+    transition-duration: 0.4s;
+}
+.line {
+    width: 30px;
+    height: 2px;
+    background-color: black;
+    border-radius: 30px;
+    margin-bottom: 10px;
+    transition-duration: 0.8s;
+    transition-property: transform;
+}
+.menu-toggle {
+    height: 60px;
+    width: 60px;
+    padding-top: 25px;
+    padding-left: 25px;
+    position: relative;
+}
+.menuaperto {
+    height: 50%;
+    transition-property: height;
+    transition-duration: 0.4s;
+}
+.lineruotata1{
+    transform: rotate(45deg);
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    transition-duration: 0.8s;
+    transition-property: transform;
+}
+.lineruotata2{
+    transform: rotate(-45deg);
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    transition-duration: 0.8s;
+    transition-property: transform;
+}
+.link {
+    margin: 0px 0 0 30px;
+    list-style: none;
+    overflow: auto;
+    float: left;
+}
+.link a{
+    text-decoration: none;
+    color: black;
+    font-size: 30px;
+    font-weight: 200;
+    float: left;
+    margin-top: 30px;
+}
+.link a:hover {
+    text-decoration: none;
+    color: #ff7b3e;
+    transition-property: color;
+    transition-duration: 0.1s;
+}
+
+
+.logo {
+    font-size: 40px;
+    position: absolute;
+    top: 10px;
+    left: 43%;
+    font-weight: 900;
+}
+.inner-link {
+    opacity: 0.3;
+    transform: translateX(-100%);
+}
+.fadelink {
+    transform: translateX(0%);
+    opacity: 1;
+    transition: all 0.5s;
+}
+.logorosso {
+    color: #ff7b3e;
+    transition: all 1
+    s;
+}
